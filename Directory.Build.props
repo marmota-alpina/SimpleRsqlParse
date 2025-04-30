@@ -1,0 +1,20 @@
+<Project>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>latest</LangVersion>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RepositoryUrl>https://github.com/dotnetleague/SimpleRsqlParse</RepositoryUrl>
+        <Authors>dotnetleague</Authors>
+        <Company>Dotnet League</Company>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj'">
+        <PackageReference Include="SonarAnalyzer.CSharp">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>
